@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "21beb455-f5b4-403b-bb52-dfd3e5fd742c",
+		"name": "Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/byName/Apollo 13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"byName",
+						"Apollo 13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/movies/v1/rate/1975/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"v1",
+						"rate",
+						"1975",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Top 10",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=EA9D3261CFDECF98EA1861E578D36F01;",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "JSESSIONID=EA9D3261CFDECF98EA1861E578D36F01;",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/movies/top",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"movies",
+						"top"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
